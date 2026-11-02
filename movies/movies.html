@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="movies.js" defer></script>
+</head>
+<body>
+
+    <header class="movie-header">
+        <a href="../index.html" class="back-link">← Home</a>
+        <h1>Movie Explorer</h1>
+        <p>Discover your favorite Studio Ghibli movies</p>
+    </header>
+
+    <main class="movie-container">
+
+        <form id="movieForm" class="movie-search">
+            <input
+                type="text"
+                id="movieInput"
+                placeholder="Search movies..."
+                aria-label="Search movies"
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="movieMessage" role="status" aria-live="polite">
+            Loading movies...
+        </p>
+
+        <section id="movieResults" class="movie-grid"></section>
+
+    </main>
+
+</body>
+</html>
